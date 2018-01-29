@@ -1,0 +1,11 @@
+<launch>
+  <arg name="debug" default="false" />
+  <arg unless="$(arg debug)" name="launch_prefix" value="" />
+  <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+  <node name="tl_dtc_node"
+  		launch-prefix="$(arg launch_prefix)"
+        pkg="tl_traj_controller"
+        type="tl_dtc"
+        output="screen" />
+</launch>
