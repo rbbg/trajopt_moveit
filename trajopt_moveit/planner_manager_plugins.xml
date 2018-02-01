@@ -1,0 +1,7 @@
+<library path="libtrajopt_moveit_planner_manager">
+  <class name="trajopt_moveit/TrajoptPlannerManager" type="trajopt_moveit::TrajoptPlannerManager" base_class_type="planning_interface::PlannerManager">
+    <description>
+      Trajopt Planner Manager
+    </description>
+  </class>
+</library>
